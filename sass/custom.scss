@@ -1,5 +1,5 @@
 
-$font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
+/*$font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;*/
 
 $primary: #0d6efd;
 $secondary: #6c757d;
@@ -21,12 +21,13 @@ $dark: #212529;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     overflow-x: hidden;
 
 }
 
 #menu li > a {
+    
     font-size: 18px;
     font-weight: bold;
     color: #3f3f3f;

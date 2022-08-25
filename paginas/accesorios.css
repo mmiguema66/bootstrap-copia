@@ -1,143 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body {
-    overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
-    background: url(./imagenes/ropa\ 9.jpg);
-    background-size: contain;
-    
+.bg-light{
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background: url(../paginas/imagenes/fondoequipo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
-
 
 .d-flex img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    display: block;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 3px solid #fff;
+  display: block;
 }
+
+.caja h2, .caja-2 h2 {
+  font-weight: bold;
+}
+.caja p, .caja-2 p {
+  color: rgb(17, 9, 82);
+  font-size: 1em;
+  font-weight: bolder;
+  text-shadow: 10px 5px 5px rgb(44, 159, 212);
+}
+
+.caja, .caja-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  border: 4px solid black;
+  box-shadow: 0px 0px 2px black;
+  color: blue;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 10px;
+  font-size: 25px;
+  -webkit-text-stroke: 1px rgb(235, 240, 241);
+}
+.caja {
+  background-image: url(../paginas/imagenes/Equipo.png);
+}
+
+.caja-2 {
+  background-image: url(../paginas/imagenes/equipo2.png);
+}
+.caja-secundaria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  background-color: rgb(67, 39, 223);
+  border: 4px solid rgb(60, 199, 204);
+  box-shadow: 0px 0px 2px black;
+  color: rgb(15, 14, 14);
+  margin: 20px ;
+  gap: 20px;
+  padding: 10px;
+  
+}
+ .caja-secundaria  i {
+  font-size: 3rem;
+  
+}
+.redes {
+  font-style: italic;
+  font-size: 2rem;
+}
+
 
 
 @media (min-width: 992px) {
-    .alto-100 {
-        height: 100vh;
-    }
+  .alto-100 {
+    height: 100vh;
+  }
 }
 #menu li > a {
-    font-size: 18px;
-    font-weight: bold;
-    color: #3f3f3f;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
 }
+
 .carousel-inner {
-max-height: 40rem ;
+  max-height: 40rem;
 }
 
+@media (max-width: 768px) {
+  #intro, #equipo {
+    width: 90% !important;
+  }
+  #equipo p {
+    display: none;
+  }
 
-@media (max-width:768px){
-    #intro, #equipo {
-        width: 90% !important;
-    }
-    #equipo p {
-        display: none;
-    }
-    .servicio-fila {
-       width: 100% !important; 
-       text-align: center;
-    }
-    .caja, .caja-secundaria {
-      width: 200px;
-    }
+  .servicio-fila {
+    width: 100% !important;
+
+    text-align: center;
+  }
+
 }
- 
 @media (max-width: 576px) {
-    .icono-wrap{
-        flex-wrap: wrap;
-        justify-content: center !important;
-    }
-    .caja {
-      background-color: white;
-      border: 4px solid black;
-      box-shadow: 0px 0px 2px black;
-      color: blue;
-      margin: 20px;
-    }
-    
-    .caja-secundaria {
-      background-color: gray;
-      border: 4px solid black;
-      box-shadow: 0px 0px 2px black;
-      color: red;
-      margin: 20px;
-    }
-    
-    .caja, .caja-secundaria {
-      width: 200px;
-    }
-}
-
-body {
-    background: #ccc;
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
   }
-  
-  .caja h2 {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .caja p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-  }
-  
-  h1 {
-    color: blue;
-  }
-  
-  p {
-    color: blue;
-  }
-  
-  .cuadrado-1 {
-    background-color: #444;
-    width: 300px;
-    height: 200px;
-    margin-top: 5px;
-    padding: 10px;
-  }
-  
-  .cuadrado-2 {
-    background-color: #444;
-    width: 200px;
-    height: 200px;
-    margin-top: 5px;
-    padding: 10px;
-  }
-  
-  .cuadrado-3 {
-    background-color: #444;
-    width: 600px;
-    height: 200px;
-    margin-top: 5px;
-    padding: 10px;
-  }
-  
-  .caja {
-    background-color: white;
-    border: 4px solid black;
-    box-shadow: 0px 0px 2px black;
-    color: blue;
-    margin: 20px;
-  }
-  
   .caja-secundaria {
-    background-color: gray;
-    border: 4px solid black;
-    box-shadow: 0px 0px 2px black;
-    color: red;
-    margin: 20px;
+    height: 10rem;
+    border-radius: 5px ;
+   
   }
-  
-  .caja, .caja-secundaria {
-    width: 500px;
+ 
+  .redes {
+    font-size: 15px;
+    font-style:initial;
+    color: #fff;
   }
-
-/*# sourceMappingURL=accesorios.css.map */
+}

@@ -1,11 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-}*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -23,6 +16,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Alfa Slab One', cursive;
     text-transform: uppercase;
+}
+.card-title {
+     color: #000;
+}
+
+h2, h5 {
+    color: transparent;
+    font-size: 40px;
+    -webkit-text-stroke: 1px white;
+    
 }
 
 .carousel-inner {
@@ -54,6 +57,7 @@ max-height: 800px ;
     padding-bottom: 40px;
     background-image: url(../imagenes/cardfondo.png);
     background-attachment: fixed;
+    background-size: cover;
 }
 .card-deck {
     margin: 0 auto !important;
@@ -63,16 +67,23 @@ max-height: 800px ;
     box-shadow: 4px 0px 15px #000;
 }
 .card-img-top {
-    width: 200px;
+    width: 800px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    height: 200px;
+}
+
+@media (max-width:1200px) {
+    .card-img-top{
+        width: 600px;
+    }
 }
 
 
 @media (max-width:767px){
     .carousel-inner {
-        height: 300px;
+        height: 500px;
     }
     .nosotros img {
         width: 300px;
@@ -89,6 +100,9 @@ max-height: 800px ;
         width: 80%;
         margin-left: 10%;
     }
+    .card-img-top {
+        width: 300px;
+    }
 
 }
  
@@ -96,5 +110,8 @@ max-height: 800px ;
     .icono-wrap{
         flex-wrap: wrap;
         justify-content: center !important;
+    }
+    .card-img-top{
+        padding-bottom: 0px;
     }
 }
